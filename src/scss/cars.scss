@@ -1,0 +1,152 @@
+.cars{
+    .container{
+        margin-top: 60px;
+        min-height: 500px;
+        .imgs{
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            img{
+                position: absolute;
+                top: 0;
+                &:nth-child(1){
+                    left: 150px;
+                }
+                &:nth-child(2){
+                    left: 350px;
+                }
+                &:nth-child(3){
+                    width: 650px;
+                    top: -70px;
+                    left: 650px;
+                }
+            }
+
+            @media (max-width:1400px){
+                min-height: 300px;
+                img{
+                    position: absolute;
+                    top: 0;
+                    &:nth-child(1){
+                        left: 75px;
+                        width: 450px;
+
+                    }
+                    &:nth-child(2){
+                        left: 255px;
+                        top: 10px;
+                        width: 550px;
+                    }
+                    &:nth-child(3){
+                        width: 450px;
+                        top: -45px;
+                        left: 425px;
+                    }
+                }
+            }
+            @media (max-width:1023px){
+                min-height: 250px;
+                img{
+                    position: absolute;
+                    top: 0;
+                    &:nth-child(1){
+                        left: 45px;
+                        width: 350px;
+
+                    }
+                    &:nth-child(2){
+                        left: 205px;
+                        top: 10px;
+                        width: 450px;
+                    }
+                    &:nth-child(3){
+                        width: 350px;
+                        top: -15px;
+                        left: 385px;
+                    }
+                }
+            }
+            @media (max-width:767px){
+                overflow: hidden;
+                min-height: auto;
+                // background: #000;
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    &:nth-child(1){
+                        position: relative;
+                        left: -10px;
+                        width: 250px;
+
+                    }
+                    &:nth-child(2){
+                        left: 95px;
+                        top: 10px;
+                        width: 290px;
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        width: 230px;
+                        top: -10px;
+                        left: 175px;
+                        display: none;
+
+                    }
+                }
+            }
+            
+        }
+        .text{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                font-size: 36px;
+                line-height: 200%;
+                width: 80%;
+                text-align: center;
+                margin-top: 0;
+                padding-top: 0;
+                span{
+                    color: #ECB595
+                }
+                &:last-child{
+                    font-size: 24px;
+                    width: 70%;
+                    color: rgba($color: #000000, $alpha: .7);
+                }
+            }
+            @media (max-width:1400px){
+                p{
+                    font-size: 30px;
+                }
+            }
+            @media (max-width:1023px){
+                p{
+                    font-size: 24px;
+                    &:last-child{
+                        font-size: 20px;
+                    }
+                }
+            }
+            @media (max-width:767px){
+                p{
+                    font-size: 16px;
+                    &:last-child{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

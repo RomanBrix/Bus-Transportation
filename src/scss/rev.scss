@@ -1,0 +1,69 @@
+.Rev{
+    background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba($color: #000000, $alpha: .5);
+        }
+        @media (max-width:767px){
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment:local;
+        }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 70px 0;
+        position: relative;
+        z-index: 2;
+        p{
+            font-size: 36px;
+            line-height: 200%;
+            text-align: center;
+            width: 60%;
+            color: #fff;
+            
+        }
+        svg{
+            width: 150px;
+            height: 150px;
+        }
+        @media (max-width:1400px){
+            
+            p{
+                font-size: 28px;
+                line-height: 170%;
+                text-align: center;
+                width: 65%;
+                color: #fff;
+                
+            }
+            svg{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        @media (max-width:767px){
+            flex-direction: column;
+            p{
+                width: 100%;
+            }
+        }
+    }
+}

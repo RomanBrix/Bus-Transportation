@@ -1,0 +1,151 @@
+.togo{
+    .container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        // min-height: 100vh;
+        .mimi-container{
+            position: relative;
+            z-index: 99;
+            width: 910px;
+            background: #ECB595;
+            box-sizing: border-box;
+            padding: 50px 40px;
+            // min-height: 400px;
+            margin-top: -130px;
+            border-radius: 7px;
+            .fromto{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root{
+                    background: #fff;
+                    border: none;
+                    *{
+                        transition: .25s;
+                    }
+                }
+                #from{
+                    outline: none;
+                    *{
+                        outline: none;
+                    }
+                }
+                #to{
+                    outline: none;
+                }
+            }
+            .datePicker{
+                margin-top: 20px;
+                // .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+                //     width: 100%;
+                //     margin-top: 20px;
+                //     .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+                //         background: #fff;
+                //     }
+                    
+                // }
+            }
+            .ownData{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+                .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+                    background: #fff;
+                    border: none;
+                    *{
+                        transition: .25s;
+                    }
+                }
+            }
+
+            .btns{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                justify-content: center;
+                .btn{
+                    background: #fff;
+                    color: #ECB595;
+                    font-weight: 600;
+                    box-sizing: border-box;
+                    padding: 15px 20px;
+                    border-radius: 5px;
+                    border: 1px solid rgba(0, 0, 0, 0.23);
+                }
+            }
+        }
+        @media (max-width:1400px){
+            .mimi-container{
+                width: 910px;
+                padding: 50px 40px;
+                margin-top: -95px;
+                    
+            }
+        }
+        @media (max-width:1023px){
+            .mimi-container{
+               
+                width: 90%;
+                padding: 50px 30px;
+                margin-top: -75px;
+                
+            }
+        }
+        @media (max-width:767px){
+            .mimi-container{
+               
+                width: 100%;
+                padding: 50px 30px;
+                margin-top: 15px;
+                .fromto{
+                    flex-direction: column;
+                    .MuiOutlinedInput-root {
+                        margin-bottom: 20px;
+                        width: 100%;
+                       
+                    }
+                    svg{
+                        display: none;
+                    }
+                }
+                .datePicker{
+                    margin-top: 0;
+                    .MuiFormControl-root{
+                        width: 100%;
+                    }
+                    .MuiOutlinedInput-root {
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                        width: 100%;
+                       
+                    }
+                }
+                .ownData{
+                    flex-direction: column;
+                    margin-top: 0;
+                    svg{
+                        display: none;
+                    }
+                    .MuiOutlinedInput-root {
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                        width: 100%;
+                       
+                    }
+                }
+                .btns{
+                    margin-top: 0;
+                    .btn{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

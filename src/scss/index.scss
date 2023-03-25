@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+
+html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1;
+    body{
+        padding: 0;
+        margin: 0;
+        .css-jbg9v3, .PrivatePickersToolbar-root{
+            box-sizing: border-box !important;
+        }
+
+        #root{
+            .App{
+                
+
+                .centered{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    .container{
+                        width: 1366px;
+                        max-width: 1366px;
+                        min-width: 1366px;
+                        box-sizing: border-box;
+                    }
+
+                    @media (max-width:1400px){
+                        .container{
+                            width: 1024px;
+                            min-width: 1024px;
+                            max-width: 1024px;
+                        }
+                      }
+                      @media (max-width:1023px){
+                          .container{
+                              width: 768px;
+                              min-width: 768px;
+                              max-width: 768px;
+                          }
+                      }
+            
+                      @media (max-width:767px){
+                          .container{
+                              width: 375px;
+                              min-width: 375px;
+                              max-width: 375px;
+                          }
+                      }
+                }
+                .floating-call{
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    transition: .25s;
+                    width: 60px;
+                    height: 60px;
+                    cursor: pointer;
+                    z-index: 999;
+                    *{
+                        transition: .25s;
+                    }
+                    &:hover{
+                        transform: rotate(40deg);
+                        *{
+                            fill: #ECB595;
+                        }
+                    }
+                }
+                .MuiOutlinedInput-root {
+                    background: #fff;
+                }
+                .css-jbg9v3, .PrivatePickersToolbar-root{
+                    box-sizing: border-box !important;
+                }
+                .css-i44wyl,.css-1v4ccyo{
+                    width: 100% !important;
+                }
+
+
+
+
+
+
+
+                @import './intro.scss';
+                @import './header.scss';
+                @import './togo.scss';
+                @import './cars.scss';
+                @import './rev.scss';
+                @import './about.scss';
+                @import './fastCall.scss';
+                @import './contacts.scss';
+                @import './footer.scss';
+            }
+        }
+    }
+}
